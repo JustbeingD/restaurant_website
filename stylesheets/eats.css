@@ -1,0 +1,23 @@
+:root{
+    --nav-hover-color: ;
+}
+
+#home {
+    height: 100vh;
+}
+/* Nav */
+.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  
+.affix.navbar {
+    background-color: #333;
+  }
+  .affix.navbar .nav-item>a, 
+  .affix.navbar .navbar-brand {
+      color: #fff;
+  }

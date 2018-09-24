@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Just Eats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/eats.css">
+</head>
+<body>
+    <!--Home-->
+    <section id="home">
+        <div class="home-cover">
+            <div class="container">
+                <h1>Just Eats</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!--Home End-->
+    <!--Nav-->
+    <nav class="navbar navbar-light navbar-expand-lg cf" data-toggle="affix">
+            <div class="container">
+                    <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav cf">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">About</a>
+                            </li>
+                        </ul>
+                        </div>
+                            <a class="navbar-brand mx-auto" href="#home"><p>Just Eats</p></a>
+                            <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ml-auto cf" >
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Reservations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          </nav>              
+    <!--Nav End-->
+    <!--About-->
+    <section id="about">
+        <div class="about-pic">
+
+        </div>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fugiat similique magnam dolorem harum sapiente, quae distinctio. Eligendi modi dignissimos incidunt omnis minima! Ab eius asperiores nemo dolores? Quis, quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eum amet officiis consequatur in voluptas neque explicabo! Cumque, unde soluta, architecto hic veniam ad sint id ea voluptas animi dolore.</p>
+        </div>
+    </section>
+    <!--About End-->
+    <!--Quotes-->
+    <section>
+          <div class="container">
+                <blockquote class="blockquote text-center">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                      </blockquote>
+          </div>
+    </section>
+    <!--Quotes End-->
+    <!--Feature-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!--navbar scroll to fixed-->
+  <script>
+$(document).ready(function() {
+
+var toggleAffix = function(affixElement, scrollElement, wrapper) {
+
+  var height = affixElement.outerHeight(),
+      top = wrapper.offset().top;
+  
+  if (scrollElement.scrollTop() >= top){
+      wrapper.height(height);
+      affixElement.addClass("affix");
+  }
+  else {
+      affixElement.removeClass("affix");
+      wrapper.height('auto');
+  }
+    
+};
+
+
+$('[data-toggle="affix"]').each(function() {
+  var ele = $(this),
+      wrapper = $('<div></div>');
+  
+  ele.before(wrapper);
+  $(window).on('scroll resize', function() {
+      toggleAffix(ele, $(this), wrapper);
+  });
+  
+  // init
+  toggleAffix(ele, $(window), wrapper);
+});
+
+});
+    </script>
+</body>
+</html>

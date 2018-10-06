@@ -1,11 +1,101 @@
 :root{
     --nav-hover-color: ;
+    --main-accent-color: darkcyan;
 }
 
-#home {
-    height: 100vh;
+body {
+    position: relative; 
+    overflow-x: hidden;
+    font-family: "Merriweather", serif;
 }
+
+/* Home */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+video {
+    position: fixed;
+    z-index: -1;
+}
+
+#home h1{
+    position: relative;
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Cookie', cursive;
+   z-index: 2;
+   color: var(--main-accent-color);
+}
+#home p {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+   z-index: 2;
+   color:white
+}
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.home-cover {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.55;
+}
+
 /* Nav */
+
+.nav-container {
+    display:flex;
+    width: 100%;
+    padding-right: 96px;
+    padding-left: 175px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar {
+    background: #fff;
+    border-top: 2px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    padding: .2rem .5rem;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--main-accent-color);
+    font-family: 'Cookie', cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: gold;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:var(--main-accent-color);
+}
+
 .affix {
     position: fixed;
     top: 0;
@@ -13,22 +103,534 @@
     left: 0;
     z-index: 1030;
   }
-  
-.affix.navbar {
-    background-color: #333;
-  }
-  .affix.navbar .nav-item>a, 
-  .affix.navbar .navbar-brand {
-      color: #fff;
-  }
 
-#ingredients {
-    background-color: red;
+/*About Us */
+#about {
+    background-color: white;
+    font-family: "Playfair Display", serif;
 }
 
-img {
+.a-sub {
+    padding: 70px 0 0 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+.about-col{
+    padding: 0;
+    margin: 0;
+}
+.about-size {
+    height: 510px;
+}
+.about-pic{
+    background: url("../images/veggie-plate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us {
+    background-image: url("../images/Black_Wood_Background.png");
+    min-height: 510px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.about-us h2 {
+    padding: 50px 0;
+    color: white;
+    font-style: italic;
+} 
+.about-us h2::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    background: var(--main-accent-color);
+    margin-left: -20px;
+}
+.first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-style: italic;
+    top: -25px;
+    position: relative;
+    color: #fff;
+  
+}
+
+.about-us p{
+    color: lightsalmon;
+    line-height: 2;
+    margin: 0 25px;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+}
+
+/* Quotes */
+
+#quotes {
+    height: 400px;
+    background-color: white;
+}
+
+.slide{
+    height: 350px;
+}
+
+.carousel-inner {
+    height: 350px;
+}
+.carousel-item {
+    padding: 95px 0 0 0;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel-indicators .active {
+    background-color: var(--main-accent-color);
+}
+.blockquote p{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 1.5; 
+    font-family: 'Playfair Display', serif;
+}
+.blockquote p::before {
+    content: open-quote;
+    font-size: 3rem;
+    opacity: .65;
+}
+.blockquote p::after {
+    content: close-quote;
+    font-size: 3rem;
+    opacity: .65;
+}
+
+/* Feature */
+
+#feature {
+    background-image: url("../images/Black_Wood_Background.png");
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 55px 0;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0 75px;
+    font-family: 'Playfair Display', serif;
+}
+/* .feature-header h1  {
+    text-align: center;
+    padding: 50px 0 50px;
+    color: white;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+} 
+
+.feature-header p {
+
+} */
+
+.header .feat h1::before{
+    content: url("../images/serve-plate.png");
+    display: block;
+    left: 50%;
+}
+
+.feat h1 {
+    color: white;
+    font-style: italic;
+    padding: 0 0 50px;
+}
+
+.feat p{
+    color: lightsalmon;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 15%;
+    font-family: 'Merriweather', serif;
+
+}
+.header .feat h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    background: var(--main-accent-color);
+    margin-left: -20px;
+}
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+    height:100%;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    padding: 10px 20px 0 20px;
+    color: slategrey;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 175px;
+    background-color:var(--main-accent-color);
+    margin: 7px 0 7px 0;
+    align-items: center;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+.lib-panel .lib-row.lib-desc .price{
+    font-size: 27px;
+    font-style: italic;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-mar{
+    padding:0
+}
+
+/*Ingredients*/
+
+#ingredients {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/oranges-bg.jpg");
+    /* background-image: url("https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63b44aa6975ca58af1bc9d7edff5981d&auto=format&fit=crop&w=800&q=60");
+    width: 100%; */
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fresh-ingred {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.fresh-ingred h3 {
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    padding: 25px 0 15px;
+
+}
+.fresh-ingred p {
+    padding: 0 15px 0 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;;
+}
+.food-img {
     border-radius: 50%;
     padding: 15px;
     border: 2px solid white;
-    height: 90px;
+    height: 90px; 
 }
+
+
+#ingredients h3 {
+    text-align: center;
+}
+
+/* Menu */
+#menu {
+    background: white;
+    padding-bottom: 50px;
+}
+
+.header .menu h1::before{
+    content: url("../images/0401-vegan_64.png");
+    display: block;
+    left: 50%;
+}
+
+.menu h1 {
+    color: ;
+    font-style: italic;
+    padding: 0 0 50px;
+}
+
+.menu p{
+    color: lightsalmon;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 15%;
+    font-family: 'Merriweather', serif;
+
+}
+.header .menu h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    background: var(--main-accent-color);
+    margin-left: -20px;
+}
+
+.menu-items h3 {
+    font-style: italic;
+    font-family: 'Playfair Display', serif;  
+}
+
+.menu-apps {
+    position: relative;
+    padding-left: 55px;
+}
+.menu-apps::before{
+    content: url("../images/0304-taco_64.png");
+    position: absolute;
+    left: -.5em;
+    top: -.5em;
+    display: flex;
+}
+
+.menu-entrees {
+    position: relative;
+    padding-left: 55px;
+}
+.menu-entrees::before{
+    content: url("../images/0302-steak_64.png");
+    position: absolute;
+    left: -.5em;
+    top: -.5em;
+    display: flex;
+}
+
+.menu-drinks {
+    position: relative;
+    padding-left: 55px;
+}
+.menu-drinks::before{
+    content: url("../images/0301-pina-colada_64.png");
+    position: absolute;
+    left: -.5em;
+    top: -.5em;
+    display: flex;
+}
+.menu-desserts {
+    position: relative;
+    padding-left: 55px;
+}
+.menu-desserts::before{
+    content: url("../images/0503-ice-cream-cone_64.png");
+    position: absolute;
+    left: -.5em;
+    top: -.5em;
+    display: flex;
+}
+
+.menu-items ul{
+    list-style: none;
+}
+
+.menu-description {
+    clear: both;
+    float: left;
+    width: 80%;
+    
+}
+
+.menu-items li {
+    border-bottom: 1px dashed #d3d3d3;
+    float: left;
+    margin: 0 0 15px 0;
+}
+.menu-description figure {
+    width: 23%;
+    position: relative;
+    float: left;
+    margin-right: 2%;
+}
+.menu-description h4 {
+    font-family: "Playfair Display", serif;
+}
+.menu-description div {
+    width: 65%;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.menu-pricing {
+    float: right;
+    text-align: right;
+    font-size: 27px;
+    color: var(--main-accent-color);
+    font-style: italic;
+    font-weight: 100;
+}
+
+.menu-description figure img {
+    width: 100%;
+    height: 60px;
+    border-radius: 4%;
+}
+
+/* Reservation */
+#reservation {
+        background: white;
+        padding-bottom: 50px;
+}
+
+#reservation ul {
+    list-style: none;
+}
+
+#reservation h3 {
+    font-family: 'Playfair Display', serif;  
+    font-style: italic;
+}
+ 
+#reservation li {
+    color: darksalmon; 
+    font-size: 19px;
+    padding-bottom: 15px; 
+
+}
+.header .reserve h1::before{
+    content: url("../images/calendar_64.png");
+    display: block;
+    left: 50%;
+}
+
+.reserve h1 {
+    color: ;
+    font-style: italic;
+    padding: 0 0 50px;
+}
+
+.reserve p{
+    color: lightsalmon;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 15%;
+
+}
+.header .reserve h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    background: var(--main-accent-color);
+    margin-left: -20px;
+}
+
+button {
+    background-color: var(--main-accent-color);
+    color: white;
+}
+
+button:hover {
+    opacity: .9;
+}
+/* Footer */
+
+#footer {
+    background-color: black; 
+    padding: 35px 0; 
+    text-align: center;
+} 
+
+#footer p {
+    margin: 0;
+    color: grey;
+}
+
+#footer a {
+    text-decoration: none;
+    color: var(--main-accent-color)
+}
+
+#footer a:hover {
+    color: gold;
+}
+
+@media (max-width: 768px) { 
+    .blockquote p {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .blockquote p::before {
+        content: open-quote;
+        font-size: 2rem;
+    }
+    .blockquote p::after {
+        content: close-quote;
+        font-size: 2rem;
+    }
+ }
+
+ @media (max-width: 1200px) {
+    .menu-pricing {
+        font-size: 21px;
+    }
+ }

@@ -1,138 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Just Eats</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/eats.css">
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offeset="50">
     <!--Home-->
     <section id="home">
-        <div class="home-cover">
-            <div class="container">
-                <h1>Just Eats</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+        <div class="container">
+            <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-offset="0"
+                data-aos-duration="2500">Just Eats</h1>
+            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-offset="0"
+                data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="./videos/cooking.mov" type="video/mp4">
+            </video>
+        </div>
+        <div class="home-cover"></div>
     </section>
     <!--Home End-->
     <!--Nav-->
-    <nav class="navbar navbar-light navbar-expand-lg cf" data-toggle="affix">
-            <div class="container">
-                    <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav navbar-nav cf">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">About</a>
-                            </li>
-                        </ul>
-                        </div>
-                            <a class="navbar-brand mx-auto" href="#home"><p>Just Eats</p></a>
-                            <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav ml-auto cf" >
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Reservation</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-          </nav>              
+    <nav id="navi" class="navbar navbar-light navbar-expand-lg cf" data-toggle="affix">
+        <div class="nav-container container">
+            <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand mx-auto" href="#home">
+                Just Eats
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Nav End-->
     <!--About-->
     <section id="about">
-        <div class="about-pic">
-
-        </div>
-        <div class="about-us">
-            <h2>About Us</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fugiat similique magnam dolorem harum sapiente, quae distinctio. Eligendi modi dignissimos incidunt omnis minima! Ab eius asperiores nemo dolores? Quis, quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eum amet officiis consequatur in voluptas neque explicabo! Cumque, unde soluta, architecto hic veniam ad sint id ea voluptas animi dolore.</p>
+        <div class="a-sub"></div>
+        <div class="row">
+            <div class="col-lg-6 about-col">
+                <div class="about-pic about-size" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+                    data-aos-duration="1000" data-aos-offset="0"></div>
+            </div>
+            <div class="col-lg-6 about-col">
+                <div class="about-us">
+                    <div class="container">
+                        <h2 data-aos="fade-up" data-aos-duration="2500">About Us</h2>
+                        <p data-aos="fade-up" data-aos-duration="3000"><span class="first-letter">L</span>orem ipsum
+                            dolor sit amet consectetur, adipisicing elit. Eaque fugiat similique magnam dolorem harum
+                            sapiente, quae distinctio. Eligendi modi
+                            dignissimos incidunt omnis minima! Ab eius asperiores nemo dolores? Quis, quaerat. Lorem
+                            ipsum
+                            dolor sit amet, consectetur adipisicing elit. Error eum amet officiis consequatur in
+                            voluptas
+                            neque explicabo! Quod blanditiis omnis repellendus, dignissimos ipsum corporis amet earum,
+                            ullam
+                            possimus quaerat expedita deleniti voluptatum dolores, praesentium nulla mollitia alias
+                            perspiciatis! Praesentium.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--About End-->
     <!--Quotes-->
     <section id="quotes">
-        <div id="quote-lines" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#quote-lines" data-slide-to="0" class="active"></li>
-                <li data-target="#quote-lines"  data-slide-to="1"></li>
-                <li data-target="#quote-lines"  data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <blockquote class="blockquote text-center">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                            ante.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-item">
-                    <blockquote class="blockquote text-center">
-                        <p class="mb-0">"Eating always good!"</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-item">
-                    <blockquote class="blockquote text-center">
-                        <p class="mb-0">"Swallow too fast, you dont enjoy the taste."</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+
+                <div id="quote-lines" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-lines" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-lines" data-slide-to="1"></li>
+                        <li data-target="#quote-lines" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">The only time to eat diet food is while you're waiting for the steak to
+                                    cook.</p>
+                                <footer class="blockquote-footer">Julia Child</footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">To me, life without veal stock, pork fat, sausage, organ meat,
+                                    demi-glace,
+                                    or
+                                    even stinky cheese is a life not worth living.</p>
+                                <footer class="blockquote-footer">Andrew Bourdin</footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">People who love to eat are always the best people.</p>
+                                <footer class="blockquote-footer">Julia Child</footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--Quotes End-->
     <!--Feature-->
-    <section id="features">
+    <section id="feature">
         <div class="container">
-            <h2>Featured Dishes</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-item-left">
-                        <img src="" alt="">
-                    </div>
+            <div class="header">
+                <div class="feat">
+                    <h1 data-aos="fade-up" data-aos-duration="2500">Featured Dishes</h1>
+                    <p data-aos="fade-up" data-aos-duration="3000">Animi, quam obcaecati at quia officia excepturi unde
+                        atque vero earum quibusdam alias architecto
+                        ut soluta aliquam ratione autem accusantium nihil ipsa.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="feature-item-right">
-    
+            </div>
+            <div class="row row-margin-bottom">
+                <div class="col-md-10 offset-md-3 no-padding lib-item " data-category="view" data-aos="zoom-in-right">
+                    <div class="lib-panel">
+                        <div class="row box-shadow">
+                            <div class="col-md-9 no-mar">
+                                <img class="lib-img-show" src="./images/salmon-plate.jpg" alt="salmon on a plate">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="lib-row lib-header">
+                                    Salmon
+                                    <div class="lib-header-seperator"></div>
+                                </div>
+                                <div class="lib-row lib-desc">
+                                    <p class="price">$25.00</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
+                                        pea
+                                        sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion
+                                        cucumber earthnut
+                                        pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-item-left">
-    
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item-right">
-                        <img src="" alt="">
+            <div class="row row-margin-bottom">
+                <div class="col-md-10 no-padding lib-item" data-category="view" data-aos="zoom-in-left">
+                    <div class="lib-panel">
+                        <div class="row box-shadow">
+                            <div class="col-md-3 order-2">
+                                <div class="lib-row lib-header">
+                                    Meatballs
+                                    <div class="lib-header-seperator"></div>
+                                </div>
+                                <div class="lib-row lib-desc">
+                                    <p class="price">$25.00</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
+                                        pea
+                                        sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion
+                                        cucumber earthnut
+                                        pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9 no-mar order-1 order-md-12">
+                                <img class="lib-img-show" src="./images/meatball-plate.jpg" alt="plate with three meatballs">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-item-left">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item-right">
-    
+            <div class="row row-margin-bottom">
+                <div class="col-md-10 offset-md-3 no-padding lib-item" data-category="view" data-aos="zoom-in-up">
+                    <div class="lib-panel">
+                        <div class="row box-shadow">
+                            <div class="col-md-9 no-mar">
+                                <img class="lib-img-show" src="./images/chicken-plate.jpg" alt="plate of chicken and rice">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="lib-row lib-header">
+                                    Chicken
+                                    <div class="lib-header-seperator"></div>
+                                </div>
+
+                                <div class="lib-row lib-desc">
+                                    <p class="price">$25.00</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
+                                        pea
+                                        sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion
+                                        cucumber earthnut
+                                        pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,27 +233,31 @@
     <!--Feature End-->
     <!--Ingredients-->
     <section id="ingredients">
-        <div class="container"> 
+        <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <img src="./images/fresh-fruit.png" alt="fruit icon">
+                <div class="col-md-3 fresh-ingred" data-aos="fade-up" data-aos-duration="1500">
+                    <img class="food-img mx-auto d-block" src="./images/fresh-fruit.png" alt="fruit icon">
                     <h3>Fresh Fruit</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique quidem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique
+                        quidem.</p>
                 </div>
-                <div class="col-3">
-                        <img src="./images/fresh-seafood.png" alt="seafood icon">
-                        <h3>Fresh Seafood</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique quidem.</p>
-                    </div>
-                <div class="col-3">
-                    <img src="./images/fresh-veggies.png" alt="vegetable icon">
+                <div class="col-md-3 fresh-ingred" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="food-img mx-auto d-block" src="./images/fresh-seafood.png" alt="seafood icon">
+                    <h3>Fresh Seafood</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique
+                        quidem.</p>
+                </div>
+                <div class="col-md-3 fresh-ingred" data-aos="fade-up" data-aos-duration="2500">
+                    <img class="food-img mx-auto d-block" src="./images/fresh-veggies.png" alt="vegetable icon">
                     <h3>Fresh Vegetables</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique quidem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique
+                        quidem.</p>
                 </div>
-                <div class="col-3">
-                    <img src="./images/fresh-meat.png" alt="meat icon">
+                <div class="col-md-3 fresh-ingred" data-aos="fade-up" data-aos-duration="3000">
+                    <img class="food-img mx-auto d-block" src="./images/fresh-meat.png" alt="meat icon">
                     <h3>Fresh Meat</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique quidem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium ad similique
+                        quidem.</p>
                 </div>
             </div>
         </div>
@@ -170,23 +266,28 @@
     <!--Menu-->
     <section id="menu">
         <div class="container">
-            <img src="" alt="">
-            <h2>Food Menu</h2>
-            <p>Animi, quam obcaecati at quia officia excepturi unde atque vero earum quibusdam alias architecto ut soluta
-                aliquam ratione autem accusantium nihil ipsa.</p>
+            <div class="header">
+                <div class="menu">
+                    <h1 data-aos="fade-up" data-aos-duration="2500">Food Menu</h1>
+                    <p data-aos="fade-up" data-aos-duration="3000">Animi, quam obcaecati at quia officia excepturi unde
+                        atque vero earum quibusdam alias architecto
+                        ut soluta aliquam ratione autem accusantium nihil ipsa.</p>
+                </div>
+            </div>
             <div class="menu-items">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="" alt="">
-                        <h3>Appitizzers</h3>
+                        <h3 class="menu-apps">Appetizers</h3>
                         <ul>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/bruschetta-plate.jpg"
+                                            alt="">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Bruschetta</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -197,10 +298,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/mozz-plate.jpg"
+                                            alt="Mozzorella and tomato plate">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Mozzorella & Tomatoes</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -211,10 +313,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/shrimp-bowl.jpg"
+                                            alt="three shrimp in a bowl">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Shrimp Cocktail</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -225,10 +328,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/dip-bowl.jpg"
+                                            alt="bowl full of dip and chips">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Spinach & Artichoke Dip</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -238,17 +342,18 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="" alt="">
-                        <h3>Entrees</h3>
+                        <h3 class="menu-entrees">Entrees</h3>
                         <ul>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/steak-plate.jpg"
+                                            alt="steak on a plate">
                                     </figure>
                                     <div>
-                                        <h4>Steak</h4>
+                                        <h4>Pan-Seared Steak</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -259,38 +364,41 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/chicken-plate.jpg"
+w                                            alt="plate of chicken and rice">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Grilled Chicken</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <div class="menu-pricing">
-                                    $10.00
+                                    $25.00
                                 </div>
                             </li>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/salmon-plate.jpg"
+                                            alt="plate of salmon">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Wild Caught Salmon</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                                 <div class="menu-pricing">
-                                    $10.00
+                                    $25.00
                                 </div>
                             </li>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/burger-plate.jpg"
+                                            alt="hamburger with a knife through it">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Beef Burger</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -304,17 +412,18 @@
             </div>
             <div class="menu-items">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="" alt="">
-                        <h3>Drinks</h3>
+                        <h3 class="menu-drinks">Drinks</h3>
                         <ul>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/strawberry-drink.jpg"
+                                            alt="strawberry drink">
                                     </figure>
                                     <div>
-                                        <h4>Soft Drink</h4>
+                                        <h4>Strawberry Drink</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -325,10 +434,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/strawberry-drink.jpg"
+                                            alt="strawberry deink with ice">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Fruit Punch</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -339,10 +449,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/spirit-drink.jpg"
+                                            alt="dark spirit being pourn">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Spirits</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -353,10 +464,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/limeade-drink.jpg"
+                                            alt="limeade in a cup">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Limeade</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -366,17 +478,18 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="" alt="">
-                        <h3>Deserts</h3>
+                        <h3 class="menu-desserts">Desserts</h3>
                         <ul>
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/baked-pear-dessert.jpg"
+                                            alt=" baked pear dessert">
                                     </figure>
                                     <div>
-                                        <h4>Carrot Cake</h4>
+                                        <h4>Baked Pear</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -387,10 +500,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/brownie-dessert.jpg"
+                                            alt="baked brownie">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Brownie</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -401,10 +515,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/sundae-dessert.jpg"
+                                            alt="sundae in a glass">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Chocolate Parfait</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -415,10 +530,11 @@
                             <li>
                                 <div class="menu-description">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="./images/cake-in-cream-dessert.jpg"
+                                            alt="yellow cake in cream in a bowl">
                                     </figure>
                                     <div>
-                                        <h4>French Fries</h4>
+                                        <h4>Cake w/ Cream</h4>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -434,111 +550,81 @@
     </section>
     <!--Menu End-->
     <section id="reservation">
-        <img src="" alt="">
-        <h2>Reserve a Table</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="container">
-                <div class="row">
-                        <div class="col-5">
-                            <h3>Contact Info</h3>
-                            <ul>
-                                <li>
-                                    <!--use a font awesome here home-->
-                                    <p>123 smith st, somewhere, CA 11111</p>
-                                </li>
-                                <li>
-                                     <!--use a font awesome here phone-->
-                                     <p>(888)888-8888</p>
-                                </li>
-                                <li>
-                                     <!--use a font awesome here mail-->
-                                     <p>info@justeats.com</p>
-                                </li>
-                                <li>
-                                     <!--use a font awesome here world-->
-                                     <p>DenisRawls.com</p>
-                                </li>
-                            </ul>
+            <div class="header">
+                <div class="reserve">
+                    <h1 data-aos="zoom-in" data-aos-duration="1500">Reserve a Table</h1>
+                    <p data-aos="zoom-in" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" data-aos="fade-up" data-aos-duration="2500">
+                    <h3>Contact Info</h3>
+                    <br>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-home"></i></span>123 smith st, somewhere, CA 11111</li>
+                        <li><span class="fa-li"><i class="fas fa-phone"></i></span>(888)888-8888</li>
+                        <li><span class="fa-li"><i class="fas fa-envelope"></i></span>info@justeats.com</li>
+                        <li><span class="fa-li"><i class="fas fa-globe"></i></span>DenisRawls.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="2500">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div>
+                            <label for="name"></label>
+                            <input type="name" class="form-control" id="" placeholder="Name">
                         </div>
-                        <div class="col-6">
-                                <h3>Reservation</h3>
-                                <form>
-                                        <div>
-                                          <label for="name"></label>
-                                          <input type="name" class="form-control" id="" placeholder="Name">
-                                        </div>
-                                        <div>
-                                          <label for="email"></label>
-                                          <input type="email" class="form-control" id="" placeholder="Email">
-                                        </div>
-                                        <div>
-                                        <label for="date"></label>
-                                        <input type="time" class="form-control" id="" placeholder="Date & Time">
-                                      </div>                              
-                                        <div>
-                                          <label for="Message"></label>
-                                          <textarea class="form-control" id="" rows="4" placeholder="Message"></textarea>
-                                        </div>
-                                       
-                            </div>
-                    </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="date"></label>
+                            <input type="text" class="form-control" id="date" placeholder="Date & Time">
+                        </div>
+                        <div>
+                            <label for="Message"></label>
+                            <textarea class="form-control" id="" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <!--Reservation End-->
     <!--Footer-->
     <footer id="footer">
-        <p>&copy 2018 Just Eats</p>
-        <p>Designed by DenisRawls.co Demo Images: Unsplash</p> 
-        <p>Tasty Icons Free handdrawngoods Icons Free Font Awesome</p>
-        <p>Back to Top</p>
+        <div class="container">
+            <p>&copy 2018 Just Eats</p>
+            <p>Designed by <a href="http://www.denisrawls.com">DenisRawls.com</a> Demo Images:<a href="http://www.unsplash.com">
+                    Unsplash</a></p>
+            <p>Icons: <a href="http://www.handreawngoods.com">Free handdrawngoods</a> & <a href="httpL//www.fontawesome.com">Font
+                    Awesome</a></p>
+            <br>
+            <p class="cf"><a href="#home">Back to Top</a></p>
+        </div>
         <!--facebook twitter instagram icons-->
     </footer>
     <!--Footer End-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <!--navbar scroll to fixed-->
-  <script>
-$(document).ready(function() {
 
-var toggleAffix = function(affixElement, scrollElement, wrapper) {
-
-  var height = affixElement.outerHeight(),
-      top = wrapper.offset().top;
-  
-  if (scrollElement.scrollTop() >= top){
-      wrapper.height(height);
-      affixElement.addClass("affix");
-  }
-  else {
-      affixElement.removeClass("affix");
-      wrapper.height('auto');
-  }
-    
-};
-
-
-$('[data-toggle="affix"]').each(function() {
-  var ele = $(this),
-      wrapper = $('<div></div>');
-  
-  ele.before(wrapper);
-  $(window).on('scroll resize', function() {
-      toggleAffix(ele, $(this), wrapper);
-  });
-  
-  // init
-  toggleAffix(ele, $(window), wrapper);
-});
-
-});
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
+<script src="./scripts/main.js"></script>
+
 </html>
